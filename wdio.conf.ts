@@ -57,6 +57,8 @@ export const config: WebdriverIO.Config = {
         platformName: 'Android',
         browserName: 'Chrome',
         'appium:deviceName': 'Android GoogleAPI Emulator',
+        'appium:appPackage':'com.wdiodemoapp',
+        'appium:appActivity':'.MainActivity',
         'appium:platformVersion': '12.0',
         'appium:automationName': 'UiAutomator2'
     }],
