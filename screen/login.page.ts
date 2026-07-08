@@ -1,8 +1,6 @@
+declare const driver: import('webdriverio').Browser;
 
 class LoginPage {
-
-
-
 
     public async logarNoNativeApp (usuario: string, senha: string) {
 
