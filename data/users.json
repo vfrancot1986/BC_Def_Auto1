@@ -1,10 +1,13 @@
 {
-  "validUser": {
-    "email": "usuario@email.com",
-    "password": "123456"
-  },
-  "invalidUser": {
-    "email": "invalido@email.com",
-    "password": "errado"
+   "testData": [
+    {
+      "email": "usuario@email.com",
+      "password": "123456",
+      "shouldSucceed": true
+    },
+    {
+      "email": "invalido@email.com",
+      "password": "errado",
+      "shouldSucceed": false
   }
 }

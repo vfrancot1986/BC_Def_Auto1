@@ -3,22 +3,23 @@ declare const driver: import('webdriverio').Browser;
 class LoginPage {
 
     private SELECTORS = {
-    logar: {
-        android: 'android=new UiSelector().text("Login")',
-        ios: '~Login'
-    },
-    email: {
-        android: 'android=new UiSelector().resourceId("input-email")',
-        ios: '~input-email'
-    },
-    senha: {
-        android: 'android=new UiSelector().resourceId("input-password")',
-        ios: '~input-password'
-    },
-    btnLogin: {
-        android: 'android=new UiSelector().text("LOGIN")',
-        ios: '~button-LOGIN'
-    }}
+        logar: {
+            android: 'android=new UiSelector().text("Login")',
+            ios: '~Login'
+        },
+        email: {
+            android: 'android=new UiSelector().resourceId("input-email")',
+            ios: '~input-email'
+        },
+        senha: {
+            android: 'android=new UiSelector().resourceId("input-password")',
+            ios: '~input-password'
+        },
+        btnLogin: {
+            android: 'android=new UiSelector().text("LOGIN")',
+            ios: '~button-LOGIN'
+        }
+    }
 
     private getSelector(element: keyof typeof this.SELECTORS) {
         return driver.isAndroid
@@ -41,6 +42,6 @@ class LoginPage {
 
         const loginButton = await driver.$(this.getSelector('btnLogin'));
         await loginButton.click();
-    }}
-
+    }
+}
 export default new LoginPage()
