@@ -1,4 +1,4 @@
-export const config: WebdriverIO.Config = {
+export const configAndroid: WebdriverIO.Config = {
     runner: 'local',
     tsConfigPath: './tsconfig.json',        
     port: 4723,

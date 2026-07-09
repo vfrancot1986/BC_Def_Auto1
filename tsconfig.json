@@ -10,6 +10,7 @@
         "types": [
             "node",
             "@wdio/globals/types",
+            "@wdio/sync",
             "expect-webdriverio",
             "@wdio/mocha-framework",
             "@wdio/appium-service"
@@ -26,6 +27,7 @@
     },
     "include": [
         "test",
-        "wdio.conf.ts"
+        "wdio.android.conf.ts",
+        "wdio.ios.conf.ts"
 , "pageobjects"    ]
 }
