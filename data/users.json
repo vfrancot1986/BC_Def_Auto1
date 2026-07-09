@@ -9,5 +9,6 @@
       "email": "invalido@email.com",
       "password": "errado",
       "shouldSucceed": false
-  }
+    }
+   ]
 }

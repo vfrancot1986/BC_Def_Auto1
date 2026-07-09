@@ -8,11 +8,11 @@ class LoginPage {
             ios: '~Login'
         },
         email: {
-            android: 'android=new UiSelector().resourceId("input-email")',
+            android: '~input-email',
             ios: '~input-email'
         },
         senha: {
-            android: 'android=new UiSelector().resourceId("input-password")',
+            android: '~input-password',
             ios: '~input-password'
         },
         btnLogin: {
