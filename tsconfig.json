@@ -9,8 +9,7 @@
         ],
         "types": [
             "node",
-            "@wdio/globals/types",
-            "@wdio/sync",
+            "@wdio/globals/types",           
             "expect-webdriverio",
             "@wdio/mocha-framework",
             "@wdio/appium-service"
