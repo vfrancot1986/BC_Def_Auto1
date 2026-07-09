@@ -1,7 +1,7 @@
 /// <reference types="mocha" />
 import LoginPage from "../screen/login.page"
 import { $, $$, browser, driver, expect } from '@wdio/globals';
-import { users } from '../data/users';
+import users from '../data/users.json';
 
 describe("Native APP", function () {
 	
